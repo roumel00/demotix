@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Anton } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "@/components/ui/sonner";
 import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
           </SidebarInset>
         </SidebarProvider>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
