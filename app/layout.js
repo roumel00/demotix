@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               <SidebarTrigger />
               <div className="flex items-center gap-2">
                 <h1 className="text-2xl font-bold">
-                  <span style={{ color: '#25b24b' }}>JAKE</span>
+                  <span style={{ color: '#25b24b' }}>DEMO</span>
                   <span style={{ color: '#000000' }}>TIX</span>
                 </h1>
               </div>

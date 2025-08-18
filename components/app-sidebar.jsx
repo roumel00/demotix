@@ -71,7 +71,7 @@ export function AppSidebar() {
       <SidebarHeader> 
         <div className="px-4 py-3">
           <h1 className="text-5xl font-black font-anton text-center">
-            <span style={{ color: '#25b24b' }}>JAKE</span>
+            <span style={{ color: '#25b24b' }}>DEMO</span>
             <span style={{ color: '#ffffff' }}>TIX</span>
           </h1>
         </div>
