@@ -44,17 +44,25 @@ export default function TeamManagement() {
 
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tight">Team Management</h1>
           <p className="text-muted-foreground text-lg">
             Easily manage your team by inviting team members.
           </p>
         </div>
-        <InviteMember 
-          dialogTrigger={<Button variant="default" size="lg">Invite Team Members</Button>} 
-          onInvite={addMember}
-        />
+        <div className="md:hidden">
+          <InviteMember 
+            dialogTrigger={<Button variant="default" size="lg" className="w-full">Invite Team Members</Button>} 
+            onInvite={addMember}
+          />
+        </div>
+        <div className="hidden md:block">
+          <InviteMember 
+            dialogTrigger={<Button variant="default" size="lg">Invite Team Members</Button>} 
+            onInvite={addMember}
+          />
+        </div>
       </div>
 
       <Card>

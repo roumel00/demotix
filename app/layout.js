@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Anton } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
 const geistSans = Geist({
@@ -33,7 +33,18 @@ export default function RootLayout({ children }) {
       >
         <SidebarProvider>
           <AppSidebar />
-          {children}
+          <SidebarInset>
+            <div className="flex h-16 items-center gap-2 border-b px-4 md:hidden">
+              <SidebarTrigger />
+              <div className="flex items-center gap-2">
+                <h1 className="text-2xl font-bold">
+                  <span style={{ color: '#25b24b' }}>JAKE</span>
+                  <span style={{ color: '#000000' }}>TIX</span>
+                </h1>
+              </div>
+            </div>
+            {children}
+          </SidebarInset>
         </SidebarProvider>
         <Toaster />
       </body>
