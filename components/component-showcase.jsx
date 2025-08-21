@@ -1,5 +1,6 @@
 import { ArenaCombobox } from '@/components/arena-combobox';
 import { DropzoneExample } from '@/components/dropzone-showcase';
+import { CalendarComponent } from '@/components/calendar-component';
 
 export default function ComponentShowcase() {
   return (
@@ -13,6 +14,7 @@ export default function ComponentShowcase() {
 
       <ArenaCombobox />
       <DropzoneExample />
+      <CalendarComponent /> 
 
       <p className="text-muted-foreground text-lg">
         <a href="https://ui.shadcn.com/components" target="_blank" rel="noopener noreferrer" className="text-blue-500 border-b border-transparent hover:border-blue-500 transition-all duration-200 ease-in-out">ui.shadcn.com</a> contains the library of base UI components.<br />
